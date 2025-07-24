@@ -1,483 +1,89 @@
-INSERT INTO fornecedor (nome, cnpj, email, telefone, ativo) VALUES ('Gonçalves - EI', '34.760.518/0001-45', 'jjesus@cavalcanti.com', '51 8672 8694', 1);
-INSERT INTO fornecedor (nome, cnpj, email, telefone, ativo) VALUES ('Pinto Costela S.A.', '59.206.734/0001-74', 'pnascimento@ig.com.br', '81 0921-0154', 1);
-INSERT INTO fornecedor (nome, cnpj, email, telefone, ativo) VALUES ('Pires e Filhos', '67.214.350/0001-21', 'eda-conceicao@vieira.com', '0900 945 9067', 0);
-INSERT INTO fornecedor (nome, cnpj, email, telefone, ativo) VALUES ('da Conceição', '84.790.215/0001-43', 'yasminfreitas@gmail.com', '+55 84 2251 2998', 1);
-INSERT INTO fornecedor (nome, cnpj, email, telefone, ativo) VALUES ('Dias', '86.071.592/0001-58', 'noahda-rosa@bol.com.br', '+55 81 2878 3892', 1);
-INSERT INTO fornecedor (nome, cnpj, email, telefone, ativo) VALUES ('Souza - EI', '32.609.157/0001-05', 'matheus39@silva.com', '11 5828-0722', 1);
-INSERT INTO fornecedor (nome, cnpj, email, telefone, ativo) VALUES ('Mendes Moraes S.A.', '86.250.713/0001-29', 'rduarte@uol.com.br', '+55 61 4354-4246', 1);
-INSERT INTO fornecedor (nome, cnpj, email, telefone, ativo) VALUES ('da Luz Fogaça S/A', '69.820.731/0001-80', 'moraesisabella@uol.com.br', '(041) 3078-6057', 1);
-INSERT INTO fornecedor (nome, cnpj, email, telefone, ativo) VALUES ('Caldeira', '62.450.198/0001-62', 'diogoda-paz@gmail.com', '0500 938 7294', 0);
-INSERT INTO fornecedor (nome, cnpj, email, telefone, ativo) VALUES ('Fernandes da Rosa e Filhos', '19.672.085/0001-82', 'silvavalentina@da.br', '+55 (021) 7936 2307', 1);
-INSERT INTO distribuidora (nome, cnpj, email, telefone, ativo) VALUES ('da Costa', '56.749.802/0001-53', 'tfernandes@hotmail.com', '(041) 9921-3069', 1);
-INSERT INTO distribuidora (nome, cnpj, email, telefone, ativo) VALUES ('Vieira e Filhos', '40.568.937/0001-82', 'rebecaazevedo@yahoo.com.br', '+55 (021) 2818-4247', 1);
-INSERT INTO distribuidora (nome, cnpj, email, telefone, ativo) VALUES ('da Rosa da Rosa - EI', '01.365.274/0001-47', 'luiza29@cardoso.br', '+55 71 8544-3877', 1);
-INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES ('In Premium', 'Alimento', 14.84, 23.81, 15.04, 'kg', '2026-08-20', 'Correia Ltda.');
-INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES ('Non Basic', 'Bebida', 14.92, 24.94, 163.79, 'kg', '2027-07-18', 'Moura');
-INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES ('Tempora Plus', 'Bebida', 20.31, 26.9, 191.87, 'un', '2026-01-02', 'Martins S.A.');
-INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES ('Atque Premium', 'Alimento', 22.1, 32.87, 75.35, 'un', '2027-02-11', 'Rocha');
-INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES ('Sit Premium', 'Bebida', 29.13, 57.63, 81.92, 'l', '2025-11-22', 'da Conceição');
-INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES ('Laboriosam Extra', 'Limpeza', 30.98, 54.64, 18.71, 'kg', '2026-01-07', 'Barbosa');
-INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES ('Adipisci Extra', 'Alimento', 43.49, 82.33, 82.22, 'un', '2026-10-11', 'Ribeiro');
-INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES ('Deleniti Extra', 'Higiene', 21.66, 29.62, 60.73, 'l', '2027-05-08', 'Barros');
-INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES ('Nemo Premium', 'Higiene', 29.04, 40.54, 97.83, 'un', '2025-12-02', 'da Luz');
-INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES ('Vitae Basic', 'Higiene', 35.81, 67.12, 157.44, 'kg', '2026-03-27', 'Pereira');
-INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES ('Nulla Premium', 'Limpeza', 23.05, 28.88, 183.5, 'l', '2026-11-04', 'Cunha');
-INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES ('Eveniet Extra', 'Higiene', 34.49, 52.3, 183.76, 'un', '2027-02-28', 'Almeida');
-INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES ('Qui Plus', 'Limpeza', 11.28, 20.26, 112.41, 'l', '2026-08-20', 'Fogaça');
-INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES ('Repellendus Basic', 'Bebida', 45.4, 68.99, 51.67, 'kg', '2026-11-01', 'Rocha - ME');
-INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES ('Cupiditate Basic', 'Bebida', 9.09, 11.25, 30.83, 'l', '2026-03-08', 'Almeida');
-INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES ('Saepe Plus', 'Bebida', 31.84, 48.01, 123.22, 'un', '2025-11-19', 'Dias');
-INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES ('Alias Basic', 'Limpeza', 48.7, 91.98, 12.18, 'l', '2026-12-01', 'Rezende S.A.');
-INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES ('Facere Premium', 'Limpeza', 39.59, 58.28, 65.77, 'kg', '2025-10-02', 'Silva');
-INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES ('Nulla Pro', 'Alimento', 47.92, 91.08, 60.04, 'l', '2027-06-07', 'Lopes - EI');
-INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES ('Facilis Plus', 'Alimento', 44.17, 63.55, 131.4, 'l', '2027-01-17', 'Duarte');
-INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES ('Vero Plus', 'Higiene', 21.83, 29.02, 191.16, 'l', '2026-02-10', 'Rezende');
-INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES ('Deleniti Premium', 'Limpeza', 26.99, 34.8, 78.97, 'un', '2026-03-22', 'Mendes Castro - EI');
-INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES ('Facilis Plus', 'Alimento', 15.84, 26.2, 24.96, 'l', '2026-10-12', 'da Conceição');
-INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES ('Vel Pro', 'Alimento', 49.01, 79.7, 33.89, 'l', '2025-11-14', 'Pinto e Filhos');
-INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES ('Deleniti Pro', 'Higiene', 16.93, 32.13, 90.4, 'kg', '2027-06-24', 'Carvalho e Filhos');
-INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES ('Quod Basic', 'Higiene', 37.08, 56.33, 137.62, 'un', '2026-04-04', 'Rezende');
-INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES ('Soluta Pro', 'Bebida', 10.45, 14.42, 74.24, 'l', '2026-06-26', 'Viana - EI');
-INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES ('Ex Basic', 'Higiene', 31.48, 37.96, 144.49, 'kg', '2027-03-27', 'Barbosa Aragão e Filhos');
-INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES ('Veritatis Plus', 'Alimento', 45.74, 86.34, 23.46, 'kg', '2027-02-24', 'Cavalcanti');
-INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES ('Illo Extra', 'Bebida', 14.64, 19.12, 187.75, 'l', '2027-02-17', 'Pires');
-INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES ('Quis Basic', 'Bebida', 15.93, 25.14, 87.34, 'kg', '2026-01-08', 'Rodrigues Carvalho - ME');
-INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES ('Vitae Premium', 'Bebida', 20.94, 32.01, 174.13, 'kg', '2026-02-26', 'Gomes');
-INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES ('Molestias Premium', 'Alimento', 23.12, 34.02, 173.72, 'kg', '2026-01-23', 'Almeida');
-INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES ('Sint Plus', 'Higiene', 29.13, 38.22, 44.86, 'un', '2026-10-10', 'da Mota Ltda.');
-INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES ('Expedita Plus', 'Alimento', 24.94, 47.11, 114.56, 'kg', '2025-11-20', 'Porto');
-INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES ('Blanditiis Basic', 'Alimento', 48.6, 94.34, 171.25, 'kg', '2026-07-01', 'Pereira - EI');
-INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES ('Repellat Pro', 'Bebida', 26.66, 50.43, 181.46, 'kg', '2027-05-18', 'Moraes Viana - ME');
-INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES ('Voluptatem Pro', 'Alimento', 49.34, 69.68, 158.97, 'un', '2027-05-08', 'Ribeiro e Filhos');
-INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES ('Assumenda Extra', 'Bebida', 36.35, 64.86, 158.84, 'l', '2026-05-15', 'Araújo');
-INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES ('Ipsa Pro', 'Higiene', 13.55, 18.62, 21.11, 'l', '2027-06-17', 'Fogaça - ME');
-INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES ('Nostrum Basic', 'Alimento', 38.66, 48.16, 120.99, 'l', '2025-10-18', 'Mendes Porto e Filhos');
-INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES ('Blanditiis Basic', 'Higiene', 7.56, 12.14, 171.76, 'kg', '2027-02-15', 'da Rosa');
-INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES ('Aliquid Basic', 'Alimento', 35.38, 49.11, 32.78, 'l', '2026-04-08', 'Martins e Filhos');
-INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES ('Vero Plus', 'Alimento', 32.87, 50.47, 120.9, 'l', '2026-08-11', 'Silva');
-INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES ('Nesciunt Extra', 'Limpeza', 14.19, 25.16, 55.35, 'un', '2027-06-24', 'Castro');
-INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES ('Libero Plus', 'Limpeza', 25.58, 49.71, 187.79, 'kg', '2027-05-03', 'da Luz da Paz - EI');
-INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES ('Provident Pro', 'Alimento', 8.3, 11.38, 60.39, 'un', '2026-06-03', 'da Mota');
-INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES ('Et Premium', 'Higiene', 21.63, 28.69, 168.41, 'l', '2026-05-22', 'da Conceição Ltda.');
-INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES ('Quasi Extra', 'Alimento', 35.05, 57.61, 187.03, 'kg', '2026-08-10', 'Cavalcanti Viana - ME');
-INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES ('Facere Plus', 'Limpeza', 10.19, 13.1, 115.11, 'un', '2026-11-06', 'Almeida');
-INSERT INTO compra (data, valorTotal, fornecedor_id, distribuidora_id) VALUES ('2025-05-23 02:28:04', 508.85, 10, 1);
-INSERT INTO compra (data, valorTotal, fornecedor_id, distribuidora_id) VALUES ('2025-03-01 17:23:14', 230.86, 5, 1);
-INSERT INTO compra (data, valorTotal, fornecedor_id, distribuidora_id) VALUES ('2025-03-27 01:08:57', 1075.6, 2, 3);
-INSERT INTO compra (data, valorTotal, fornecedor_id, distribuidora_id) VALUES ('2025-04-24 00:38:29', 1952.55, 1, 2);
-INSERT INTO compra (data, valorTotal, fornecedor_id, distribuidora_id) VALUES ('2025-03-08 01:30:39', 1567.94, 4, 1);
-INSERT INTO compra (data, valorTotal, fornecedor_id, distribuidora_id) VALUES ('2025-05-26 09:50:40', 737.46, 4, 2);
-INSERT INTO compra (data, valorTotal, fornecedor_id, distribuidora_id) VALUES ('2025-06-13 16:25:54', 1369.66, 4, 1);
-INSERT INTO compra (data, valorTotal, fornecedor_id, distribuidora_id) VALUES ('2025-01-23 18:21:03', 823.01, 9, 2);
-INSERT INTO compra (data, valorTotal, fornecedor_id, distribuidora_id) VALUES ('2025-06-22 02:56:02', 281.26, 6, 2);
-INSERT INTO compra (data, valorTotal, fornecedor_id, distribuidora_id) VALUES ('2025-03-27 12:16:33', 1395.34, 9, 3);
-INSERT INTO compra (data, valorTotal, fornecedor_id, distribuidora_id) VALUES ('2025-05-30 15:38:50', 692.83, 2, 3);
-INSERT INTO compra (data, valorTotal, fornecedor_id, distribuidora_id) VALUES ('2025-06-12 06:16:50', 1121.27, 7, 3);
-INSERT INTO compra (data, valorTotal, fornecedor_id, distribuidora_id) VALUES ('2025-03-13 11:52:52', 347.39, 10, 3);
-INSERT INTO compra (data, valorTotal, fornecedor_id, distribuidora_id) VALUES ('2025-03-05 19:12:08', 247.96, 9, 3);
-INSERT INTO compra (data, valorTotal, fornecedor_id, distribuidora_id) VALUES ('2025-05-20 07:45:50', 668.04, 8, 3);
-INSERT INTO compra (data, valorTotal, fornecedor_id, distribuidora_id) VALUES ('2025-04-14 16:31:44', 388.7, 1, 1);
-INSERT INTO compra (data, valorTotal, fornecedor_id, distribuidora_id) VALUES ('2025-03-16 17:15:09', 1938.07, 3, 2);
-INSERT INTO compra (data, valorTotal, fornecedor_id, distribuidora_id) VALUES ('2025-04-14 07:57:55', 1315.83, 7, 3);
-INSERT INTO compra (data, valorTotal, fornecedor_id, distribuidora_id) VALUES ('2025-05-28 06:18:42', 192.44, 8, 3);
-INSERT INTO compra (data, valorTotal, fornecedor_id, distribuidora_id) VALUES ('2025-05-10 22:09:31', 420.97, 7, 3);
-INSERT INTO compra (data, valorTotal, fornecedor_id, distribuidora_id) VALUES ('2025-06-06 04:07:10', 1823.78, 10, 3);
-INSERT INTO compra (data, valorTotal, fornecedor_id, distribuidora_id) VALUES ('2025-06-12 00:51:21', 822.05, 7, 3);
-INSERT INTO compra (data, valorTotal, fornecedor_id, distribuidora_id) VALUES ('2025-03-26 07:12:02', 1370.75, 7, 3);
-INSERT INTO compra (data, valorTotal, fornecedor_id, distribuidora_id) VALUES ('2025-03-20 19:00:37', 483.58, 7, 1);
-INSERT INTO compra (data, valorTotal, fornecedor_id, distribuidora_id) VALUES ('2025-03-26 17:34:24', 910.36, 7, 2);
-INSERT INTO compra (data, valorTotal, fornecedor_id, distribuidora_id) VALUES ('2025-04-30 22:57:55', 347.42, 1, 1);
-INSERT INTO compra (data, valorTotal, fornecedor_id, distribuidora_id) VALUES ('2025-02-24 09:56:59', 757.04, 5, 2);
-INSERT INTO compra (data, valorTotal, fornecedor_id, distribuidora_id) VALUES ('2025-04-04 16:06:23', 754.45, 5, 3);
-INSERT INTO compra (data, valorTotal, fornecedor_id, distribuidora_id) VALUES ('2025-03-05 04:51:14', 1103.09, 5, 3);
-INSERT INTO compra (data, valorTotal, fornecedor_id, distribuidora_id) VALUES ('2025-04-24 23:35:26', 765.75, 6, 1);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (7.51, 35.94, 1, 46);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (10.6, 16.3, 1, 17);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (2.75, 24.06, 1, 4);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (7.34, 10.89, 2, 1);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (4.07, 24.88, 2, 17);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (9.13, 5.44, 2, 46);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (11.37, 42.56, 3, 10);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (11.5, 24.34, 3, 38);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (6.86, 45.45, 3, 3);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (13.96, 35.01, 4, 14);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (15.82, 44.79, 4, 23);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (19.5, 38.73, 4, 27);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (17.75, 6.12, 5, 12);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (18.57, 40.21, 5, 48);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (16.24, 43.88, 5, 27);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (15.96, 9.86, 6, 11);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (17.31, 15.01, 6, 3);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (7.64, 41.92, 6, 30);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (13.54, 22.93, 7, 2);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (17.42, 48.51, 7, 18);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (7.67, 27.92, 7, 18);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (3.19, 48.67, 8, 2);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (12.03, 49.26, 8, 12);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (3.06, 24.56, 8, 3);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (19.7, 10.2, 9, 39);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (4.61, 7.0, 9, 37);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (1.03, 46.65, 9, 28);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (18.86, 38.17, 10, 47);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (7.92, 8.15, 10, 13);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (18.49, 33.04, 10, 43);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (10.64, 35.01, 11, 20);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (8.65, 18.3, 11, 21);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (4.64, 34.92, 11, 9);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (18.15, 32.7, 12, 48);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (8.72, 42.52, 12, 20);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (6.45, 24.34, 12, 20);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (7.12, 24.88, 13, 42);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (5.06, 26.29, 13, 44);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (4.22, 8.82, 13, 48);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (12.77, 9.2, 14, 41);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (5.46, 18.97, 14, 49);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (3.8, 7.08, 14, 13);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (2.38, 23.65, 15, 50);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (11.94, 37.33, 15, 41);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (10.39, 15.98, 15, 25);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (9.08, 12.91, 16, 50);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (10.84, 7.26, 16, 45);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (18.43, 10.46, 16, 16);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (11.09, 30.15, 17, 43);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (19.05, 45.11, 17, 21);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (16.49, 45.14, 17, 40);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (18.05, 38.46, 18, 29);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (9.55, 38.83, 18, 31);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (6.27, 40.0, 18, 41);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (6.22, 8.49, 19, 16);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (5.46, 20.11, 19, 19);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (2.53, 11.79, 19, 35);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (14.42, 7.89, 20, 10);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (7.29, 25.97, 20, 27);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (4.93, 23.91, 20, 4);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (17.28, 39.45, 21, 2);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (10.06, 47.42, 21, 25);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (15.32, 43.41, 21, 20);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (14.96, 40.99, 22, 48);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (10.28, 17.28, 22, 15);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (1.55, 20.13, 22, 32);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (16.97, 46.38, 23, 11);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (11.15, 45.81, 23, 40);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (11.72, 6.22, 23, 38);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (4.45, 16.71, 24, 30);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (5.02, 19.71, 24, 21);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (17.71, 17.52, 24, 49);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (9.94, 38.71, 25, 6);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (20.0, 20.75, 25, 4);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (2.3, 48.08, 25, 42);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (4.79, 5.92, 26, 16);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (5.53, 26.31, 26, 10);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (11.72, 14.81, 26, 8);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (12.51, 48.37, 27, 11);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (3.18, 41.87, 27, 46);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (3.05, 6.16, 27, 20);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (18.25, 21.89, 28, 44);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (4.77, 31.64, 28, 46);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (5.61, 36.37, 28, 41);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (16.31, 40.83, 29, 39);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (15.87, 20.62, 29, 37);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (13.57, 8.1, 29, 28);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (16.62, 9.75, 30, 27);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (13.08, 42.29, 30, 24);
-INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES (3.91, 12.93, 30, 46);
-INSERT INTO venda (data, valorTotal) VALUES ('2025-07-13 20:42:43', 992.56);
-INSERT INTO venda (data, valorTotal) VALUES ('2025-07-05 01:15:33', 598.61);
-INSERT INTO venda (data, valorTotal) VALUES ('2025-06-25 10:55:18', 1019.82);
-INSERT INTO venda (data, valorTotal) VALUES ('2025-06-30 20:39:24', 661.19);
-INSERT INTO venda (data, valorTotal) VALUES ('2025-07-07 12:27:10', 646.52);
-INSERT INTO venda (data, valorTotal) VALUES ('2025-07-18 05:56:11', 1149.44);
-INSERT INTO venda (data, valorTotal) VALUES ('2025-07-12 16:28:58', 547.52);
-INSERT INTO venda (data, valorTotal) VALUES ('2025-07-22 11:53:59', 917.26);
-INSERT INTO venda (data, valorTotal) VALUES ('2025-07-01 22:51:42', 494.75);
-INSERT INTO venda (data, valorTotal) VALUES ('2025-07-04 06:01:15', 1285.72);
-INSERT INTO venda (data, valorTotal) VALUES ('2025-07-10 21:10:00', 1117.54);
-INSERT INTO venda (data, valorTotal) VALUES ('2025-07-08 20:13:44', 708.0);
-INSERT INTO venda (data, valorTotal) VALUES ('2025-07-15 19:01:51', 881.68);
-INSERT INTO venda (data, valorTotal) VALUES ('2025-07-07 08:58:44', 480.49);
-INSERT INTO venda (data, valorTotal) VALUES ('2025-07-10 13:32:42', 491.66);
-INSERT INTO venda (data, valorTotal) VALUES ('2025-07-12 13:50:46', 1498.63);
-INSERT INTO venda (data, valorTotal) VALUES ('2025-07-03 16:14:20', 405.25);
-INSERT INTO venda (data, valorTotal) VALUES ('2025-07-12 09:33:21', 1486.01);
-INSERT INTO venda (data, valorTotal) VALUES ('2025-06-29 00:54:09', 435.24);
-INSERT INTO venda (data, valorTotal) VALUES ('2025-07-09 21:38:40', 1139.49);
-INSERT INTO venda (data, valorTotal) VALUES ('2025-07-05 09:24:01', 1327.84);
-INSERT INTO venda (data, valorTotal) VALUES ('2025-07-23 09:05:08', 1077.14);
-INSERT INTO venda (data, valorTotal) VALUES ('2025-07-07 14:43:24', 690.28);
-INSERT INTO venda (data, valorTotal) VALUES ('2025-07-05 05:04:49', 752.81);
-INSERT INTO venda (data, valorTotal) VALUES ('2025-07-22 17:39:02', 1029.59);
-INSERT INTO venda (data, valorTotal) VALUES ('2025-07-18 17:45:38', 314.59);
-INSERT INTO venda (data, valorTotal) VALUES ('2025-07-22 01:37:16', 697.6);
-INSERT INTO venda (data, valorTotal) VALUES ('2025-07-09 00:40:32', 724.41);
-INSERT INTO venda (data, valorTotal) VALUES ('2025-07-09 21:16:47', 1107.96);
-INSERT INTO venda (data, valorTotal) VALUES ('2025-07-22 00:00:27', 954.69);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (9.69, 34.31, 1, 34);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (7.97, 51.84, 1, 35);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (6.33, 39.01, 1, 47);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (8.48, 17.8, 2, 16);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (3.19, 51.82, 2, 29);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (7.01, 40.28, 2, 40);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (8.66, 26.37, 3, 32);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (4.19, 33.25, 3, 14);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (8.92, 73.11, 3, 18);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (6.0, 56.5, 4, 18);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (1.77, 74.81, 4, 13);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (6.0, 31.63, 4, 32);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (6.81, 54.17, 5, 31);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (1.84, 29.94, 5, 2);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (3.19, 69.76, 5, 45);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (5.26, 57.78, 6, 24);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (9.97, 59.53, 6, 28);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (7.33, 34.38, 6, 23);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (3.07, 74.92, 7, 17);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (2.08, 58.23, 7, 21);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (7.21, 27.24, 7, 49);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (5.36, 75.21, 8, 48);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (5.72, 35.47, 8, 49);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (8.49, 36.66, 8, 7);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (2.61, 11.27, 9, 24);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (2.14, 14.1, 9, 35);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (5.98, 72.77, 9, 4);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (6.74, 77.75, 10, 9);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (8.85, 61.67, 10, 7);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (5.31, 40.66, 10, 31);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (3.27, 87.56, 11, 4);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (8.4, 46.06, 11, 8);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (6.19, 71.78, 11, 5);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (2.34, 60.66, 12, 10);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (1.77, 32.34, 12, 20);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (7.88, 64.57, 12, 36);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (3.03, 57.03, 13, 40);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (9.18, 36.76, 13, 29);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (9.91, 37.48, 13, 38);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (1.54, 96.41, 14, 40);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (9.53, 28.7, 14, 7);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (3.38, 17.31, 14, 14);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (2.56, 16.76, 15, 16);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (4.68, 72.04, 15, 1);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (3.62, 30.83, 15, 31);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (3.54, 87.36, 16, 46);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (7.19, 93.15, 16, 5);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (6.31, 82.35, 16, 41);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (4.83, 59.01, 17, 13);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (2.34, 33.91, 17, 42);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (1.64, 24.93, 17, 10);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (6.36, 84.18, 18, 20);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (4.95, 52.18, 18, 19);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (7.3, 94.84, 18, 20);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (5.86, 49.4, 19, 33);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (1.36, 48.88, 19, 39);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (6.43, 12.33, 19, 21);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (9.66, 85.24, 20, 15);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (6.28, 11.87, 20, 37);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (7.05, 34.26, 20, 49);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (7.87, 25.77, 21, 3);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (6.86, 92.45, 21, 34);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (9.97, 49.23, 21, 12);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (9.72, 52.3, 22, 32);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (4.0, 70.31, 22, 27);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (3.97, 72.43, 22, 11);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (6.96, 46.04, 23, 19);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (5.95, 50.93, 23, 49);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (3.27, 20.43, 23, 21);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (4.64, 56.31, 24, 50);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (6.92, 58.83, 24, 1);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (1.49, 56.66, 24, 27);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (7.81, 66.29, 25, 40);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (1.46, 34.04, 25, 49);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (9.35, 49.43, 25, 9);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (5.36, 12.6, 26, 45);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (6.48, 31.54, 26, 41);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (3.8, 11.23, 26, 11);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (1.84, 99.3, 27, 27);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (5.15, 20.57, 27, 8);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (5.49, 74.49, 27, 10);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (7.35, 47.39, 28, 33);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (9.82, 31.94, 28, 31);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (2.3, 27.15, 28, 36);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (5.57, 89.14, 29, 39);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (3.49, 81.1, 29, 5);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (4.06, 80.89, 29, 27);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (8.38, 35.46, 30, 18);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (8.54, 62.19, 30, 20);
-INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES (5.41, 23.37, 30, 43);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (1, 'entrada', 7.51, 'compra', '2025-01-31 07:31:02', 46);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (2, 'entrada', 10.6, 'compra', '2025-03-31 21:02:10', 17);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (3, 'entrada', 2.75, 'compra', '2025-02-27 14:25:45', 4);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (4, 'entrada', 7.34, 'compra', '2025-03-07 00:59:33', 1);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (5, 'entrada', 4.07, 'compra', '2025-02-16 21:34:43', 17);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (6, 'entrada', 9.13, 'compra', '2025-03-02 22:00:34', 46);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (7, 'entrada', 11.37, 'compra', '2025-06-08 01:55:52', 10);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (8, 'entrada', 11.5, 'compra', '2025-02-23 08:52:29', 38);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (9, 'entrada', 6.86, 'compra', '2025-05-16 20:58:16', 3);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (10, 'entrada', 13.96, 'compra', '2025-03-15 13:00:00', 14);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (11, 'entrada', 15.82, 'compra', '2025-06-21 01:37:45', 23);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (12, 'entrada', 19.5, 'compra', '2025-04-29 19:48:43', 27);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (13, 'entrada', 17.75, 'compra', '2025-02-07 06:39:03', 12);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (14, 'entrada', 18.57, 'compra', '2025-02-20 18:50:42', 48);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (15, 'entrada', 16.24, 'compra', '2025-06-22 00:13:18', 27);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (16, 'entrada', 15.96, 'compra', '2025-06-14 10:13:24', 11);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (17, 'entrada', 17.31, 'compra', '2025-03-22 08:49:39', 3);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (18, 'entrada', 7.64, 'compra', '2025-02-05 06:31:19', 30);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (19, 'entrada', 13.54, 'compra', '2025-05-21 02:59:19', 2);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (20, 'entrada', 17.42, 'compra', '2025-06-08 03:25:58', 18);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (21, 'entrada', 7.67, 'compra', '2025-04-05 06:01:23', 18);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (22, 'entrada', 3.19, 'compra', '2025-02-01 14:32:09', 2);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (23, 'entrada', 12.03, 'compra', '2025-01-23 15:45:59', 12);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (24, 'entrada', 3.06, 'compra', '2025-02-22 20:56:53', 3);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (25, 'entrada', 19.7, 'compra', '2025-05-29 05:25:23', 39);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (26, 'entrada', 4.61, 'compra', '2025-04-21 04:13:42', 37);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (27, 'entrada', 1.03, 'compra', '2025-06-17 04:42:03', 28);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (28, 'entrada', 18.86, 'compra', '2025-05-24 13:29:30', 47);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (29, 'entrada', 7.92, 'compra', '2025-04-11 02:20:24', 13);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (30, 'entrada', 18.49, 'compra', '2025-05-24 12:44:03', 43);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (31, 'entrada', 10.64, 'compra', '2025-03-22 07:12:13', 20);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (32, 'entrada', 8.65, 'compra', '2025-02-21 16:00:31', 21);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (33, 'entrada', 4.64, 'compra', '2025-04-06 13:55:18', 9);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (34, 'entrada', 18.15, 'compra', '2025-04-09 14:17:07', 48);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (35, 'entrada', 8.72, 'compra', '2025-03-03 15:50:47', 20);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (36, 'entrada', 6.45, 'compra', '2025-03-09 13:53:07', 20);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (37, 'entrada', 7.12, 'compra', '2025-02-09 04:54:40', 42);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (38, 'entrada', 5.06, 'compra', '2025-06-13 00:19:11', 44);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (39, 'entrada', 4.22, 'compra', '2025-05-06 15:21:09', 48);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (40, 'entrada', 12.77, 'compra', '2025-05-29 19:04:17', 41);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (41, 'entrada', 5.46, 'compra', '2025-05-30 18:21:04', 49);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (42, 'entrada', 3.8, 'compra', '2025-03-30 17:34:19', 13);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (43, 'entrada', 2.38, 'compra', '2025-03-23 22:12:55', 50);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (44, 'entrada', 11.94, 'compra', '2025-06-13 04:57:11', 41);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (45, 'entrada', 10.39, 'compra', '2025-05-09 20:43:15', 25);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (46, 'entrada', 9.08, 'compra', '2025-04-08 04:18:55', 50);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (47, 'entrada', 10.84, 'compra', '2025-04-12 13:23:16', 45);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (48, 'entrada', 18.43, 'compra', '2025-04-07 13:49:31', 16);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (49, 'entrada', 11.09, 'compra', '2025-05-25 18:39:48', 43);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (50, 'entrada', 19.05, 'compra', '2025-05-03 05:14:34', 21);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (51, 'entrada', 16.49, 'compra', '2025-03-21 03:46:15', 40);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (52, 'entrada', 18.05, 'compra', '2025-05-19 19:54:10', 29);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (53, 'entrada', 9.55, 'compra', '2025-05-13 13:48:57', 31);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (54, 'entrada', 6.27, 'compra', '2025-01-30 00:35:05', 41);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (55, 'entrada', 6.22, 'compra', '2025-01-24 04:08:17', 16);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (56, 'entrada', 5.46, 'compra', '2025-01-31 02:33:19', 19);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (57, 'entrada', 2.53, 'compra', '2025-05-28 21:45:45', 35);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (58, 'entrada', 14.42, 'compra', '2025-04-01 14:50:04', 10);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (59, 'entrada', 7.29, 'compra', '2025-04-02 12:21:40', 27);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (60, 'entrada', 4.93, 'compra', '2025-06-13 14:48:40', 4);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (61, 'entrada', 17.28, 'compra', '2025-02-03 20:38:42', 2);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (62, 'entrada', 10.06, 'compra', '2025-05-15 17:05:18', 25);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (63, 'entrada', 15.32, 'compra', '2025-02-27 15:30:47', 20);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (64, 'entrada', 14.96, 'compra', '2025-06-03 17:05:36', 48);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (65, 'entrada', 10.28, 'compra', '2025-03-08 06:49:43', 15);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (66, 'entrada', 1.55, 'compra', '2025-03-20 08:55:57', 32);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (67, 'entrada', 16.97, 'compra', '2025-06-03 17:18:11', 11);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (68, 'entrada', 11.15, 'compra', '2025-04-14 09:23:42', 40);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (69, 'entrada', 11.72, 'compra', '2025-03-29 05:14:48', 38);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (70, 'entrada', 4.45, 'compra', '2025-05-09 07:30:13', 30);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (71, 'entrada', 5.02, 'compra', '2025-06-06 19:09:01', 21);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (72, 'entrada', 17.71, 'compra', '2025-02-03 11:16:04', 49);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (73, 'entrada', 9.94, 'compra', '2025-06-12 15:00:15', 6);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (74, 'entrada', 20.0, 'compra', '2025-01-22 10:29:15', 4);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (75, 'entrada', 2.3, 'compra', '2025-04-19 16:11:49', 42);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (76, 'entrada', 4.79, 'compra', '2025-04-03 21:35:11', 16);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (77, 'entrada', 5.53, 'compra', '2025-06-07 11:06:57', 10);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (78, 'entrada', 11.72, 'compra', '2025-03-08 06:26:46', 8);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (79, 'entrada', 12.51, 'compra', '2025-06-03 17:04:10', 11);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (80, 'entrada', 3.18, 'compra', '2025-05-22 15:35:20', 46);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (81, 'entrada', 3.05, 'compra', '2025-05-25 23:13:20', 20);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (82, 'entrada', 18.25, 'compra', '2025-06-21 16:35:20', 44);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (83, 'entrada', 4.77, 'compra', '2025-05-03 22:59:44', 46);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (84, 'entrada', 5.61, 'compra', '2025-05-12 10:26:00', 41);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (85, 'entrada', 16.31, 'compra', '2025-01-31 23:59:25', 39);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (86, 'entrada', 15.87, 'compra', '2025-06-17 09:29:26', 37);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (87, 'entrada', 13.57, 'compra', '2025-05-24 16:17:30', 28);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (88, 'entrada', 16.62, 'compra', '2025-02-22 09:10:56', 27);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (89, 'entrada', 13.08, 'compra', '2025-06-16 13:49:53', 24);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (90, 'entrada', 3.91, 'compra', '2025-02-06 06:00:33', 46);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (91, 'saida', 9.69, 'venda', '2025-07-20 13:44:34', 34);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (92, 'saida', 7.97, 'venda', '2025-07-22 07:46:34', 35);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (93, 'saida', 6.33, 'venda', '2025-07-09 16:52:55', 47);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (94, 'saida', 8.48, 'venda', '2025-07-05 08:33:06', 16);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (95, 'saida', 3.19, 'venda', '2025-07-15 17:50:04', 29);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (96, 'saida', 7.01, 'venda', '2025-06-28 11:07:50', 40);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (97, 'saida', 8.66, 'venda', '2025-07-16 05:02:21', 32);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (98, 'saida', 4.19, 'venda', '2025-07-09 03:11:44', 14);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (99, 'saida', 8.92, 'venda', '2025-07-14 15:38:43', 18);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (100, 'saida', 6.0, 'venda', '2025-07-07 09:24:01', 18);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (101, 'saida', 1.77, 'venda', '2025-06-25 02:04:34', 13);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (102, 'saida', 6.0, 'venda', '2025-07-07 02:43:43', 32);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (103, 'saida', 6.81, 'venda', '2025-07-16 14:40:14', 31);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (104, 'saida', 1.84, 'venda', '2025-07-09 02:06:37', 2);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (105, 'saida', 3.19, 'venda', '2025-07-16 11:41:16', 45);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (106, 'saida', 5.26, 'venda', '2025-06-30 01:24:26', 24);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (107, 'saida', 9.97, 'venda', '2025-07-13 09:54:22', 28);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (108, 'saida', 7.33, 'venda', '2025-06-26 08:10:51', 23);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (109, 'saida', 3.07, 'venda', '2025-06-24 17:38:56', 17);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (110, 'saida', 2.08, 'venda', '2025-07-15 21:52:23', 21);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (111, 'saida', 7.21, 'venda', '2025-06-26 11:45:29', 49);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (112, 'saida', 5.36, 'venda', '2025-06-30 02:56:53', 48);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (113, 'saida', 5.72, 'venda', '2025-07-13 18:19:12', 49);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (114, 'saida', 8.49, 'venda', '2025-06-26 08:49:26', 7);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (115, 'saida', 2.61, 'venda', '2025-07-21 05:18:50', 24);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (116, 'saida', 2.14, 'venda', '2025-06-24 06:27:19', 35);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (117, 'saida', 5.98, 'venda', '2025-07-21 07:44:04', 4);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (118, 'saida', 6.74, 'venda', '2025-07-18 03:57:39', 9);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (119, 'saida', 8.85, 'venda', '2025-07-07 10:13:49', 7);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (120, 'saida', 5.31, 'venda', '2025-06-29 07:31:09', 31);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (121, 'saida', 3.27, 'venda', '2025-07-12 16:08:29', 4);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (122, 'saida', 8.4, 'venda', '2025-07-18 14:37:20', 8);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (123, 'saida', 6.19, 'venda', '2025-07-16 01:39:33', 5);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (124, 'saida', 2.34, 'venda', '2025-07-17 13:41:01', 10);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (125, 'saida', 1.77, 'venda', '2025-07-11 18:54:48', 20);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (126, 'saida', 7.88, 'venda', '2025-07-07 13:07:05', 36);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (127, 'saida', 3.03, 'venda', '2025-07-01 15:34:33', 40);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (128, 'saida', 9.18, 'venda', '2025-07-18 08:00:18', 29);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (129, 'saida', 9.91, 'venda', '2025-07-14 06:20:58', 38);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (130, 'saida', 1.54, 'venda', '2025-07-14 10:47:40', 40);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (131, 'saida', 9.53, 'venda', '2025-07-04 22:42:31', 7);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (132, 'saida', 3.38, 'venda', '2025-07-10 00:32:58', 14);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (133, 'saida', 2.56, 'venda', '2025-07-14 00:58:49', 16);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (134, 'saida', 4.68, 'venda', '2025-07-07 02:10:08', 1);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (135, 'saida', 3.62, 'venda', '2025-07-04 02:35:36', 31);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (136, 'saida', 3.54, 'venda', '2025-07-11 17:15:49', 46);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (137, 'saida', 7.19, 'venda', '2025-07-10 19:39:39', 5);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (138, 'saida', 6.31, 'venda', '2025-06-30 07:26:03', 41);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (139, 'saida', 4.83, 'venda', '2025-07-11 17:23:17', 13);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (140, 'saida', 2.34, 'venda', '2025-07-04 06:57:18', 42);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (141, 'saida', 1.64, 'venda', '2025-07-11 04:06:55', 10);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (142, 'saida', 6.36, 'venda', '2025-07-03 06:05:38', 20);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (143, 'saida', 4.95, 'venda', '2025-07-16 17:38:54', 19);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (144, 'saida', 7.3, 'venda', '2025-07-20 19:27:17', 20);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (145, 'saida', 5.86, 'venda', '2025-07-12 20:38:29', 33);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (146, 'saida', 1.36, 'venda', '2025-07-17 07:30:11', 39);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (147, 'saida', 6.43, 'venda', '2025-07-16 02:39:27', 21);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (148, 'saida', 9.66, 'venda', '2025-07-02 13:11:50', 15);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (149, 'saida', 6.28, 'venda', '2025-07-05 23:47:46', 37);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (150, 'saida', 7.05, 'venda', '2025-06-28 06:20:58', 49);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (151, 'saida', 7.87, 'venda', '2025-07-17 07:20:54', 3);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (152, 'saida', 6.86, 'venda', '2025-06-25 02:42:40', 34);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (153, 'saida', 9.97, 'venda', '2025-06-25 00:56:58', 12);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (154, 'saida', 9.72, 'venda', '2025-07-15 11:48:51', 32);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (155, 'saida', 4.0, 'venda', '2025-07-23 16:03:15', 27);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (156, 'saida', 3.97, 'venda', '2025-07-23 14:37:33', 11);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (157, 'saida', 6.96, 'venda', '2025-07-21 05:30:15', 19);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (158, 'saida', 5.95, 'venda', '2025-07-16 12:16:15', 49);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (159, 'saida', 3.27, 'venda', '2025-07-04 15:36:33', 21);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (160, 'saida', 4.64, 'venda', '2025-07-05 11:54:01', 50);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (161, 'saida', 6.92, 'venda', '2025-07-20 12:30:14', 1);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (162, 'saida', 1.49, 'venda', '2025-07-07 00:40:13', 27);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (163, 'saida', 7.81, 'venda', '2025-06-24 03:55:13', 40);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (164, 'saida', 1.46, 'venda', '2025-07-01 11:48:23', 49);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (165, 'saida', 9.35, 'venda', '2025-06-24 04:03:51', 9);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (166, 'saida', 5.36, 'venda', '2025-07-04 03:51:04', 45);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (167, 'saida', 6.48, 'venda', '2025-07-03 23:43:50', 41);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (168, 'saida', 3.8, 'venda', '2025-07-15 03:57:16', 11);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (169, 'saida', 1.84, 'venda', '2025-07-15 22:23:44', 27);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (170, 'saida', 5.15, 'venda', '2025-07-04 15:12:06', 8);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (171, 'saida', 5.49, 'venda', '2025-07-05 08:01:44', 10);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (172, 'saida', 7.35, 'venda', '2025-07-19 17:03:26', 33);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (173, 'saida', 9.82, 'venda', '2025-07-03 12:49:43', 31);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (174, 'saida', 2.3, 'venda', '2025-07-04 00:39:20', 36);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (175, 'saida', 5.57, 'venda', '2025-06-28 15:38:18', 39);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (176, 'saida', 3.49, 'venda', '2025-06-27 20:24:35', 5);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (177, 'saida', 4.06, 'venda', '2025-07-19 22:30:50', 27);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (178, 'saida', 8.38, 'venda', '2025-06-24 20:00:35', 18);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (179, 'saida', 8.54, 'venda', '2025-06-29 19:06:13', 20);
-INSERT INTO movimentacaoEstoque (id, tipo, quantidade, origem, data, produto_id) VALUES (180, 'saida', 5.41, 'venda', '2025-07-20 05:54:36', 43);
+-- Distribuidora
+INSERT INTO distribuidora (nome, cnpj, email, telefone, ativo) VALUES
+('Distribuidora Primeira', '00.000.000/0001-00', 'contato@distribuidora1.com', '81999999999', 1),
+('Distribuidora Segunda', '00.000.000/0002-00', 'contato@distribuidora2.com', '81999999998', 0),
+('Distribuidora Terceira', '00.000.000/0003-00', 'contato@distribuidora3.com', '81999999997', 1);
+
+-- Fornecedor
+INSERT INTO fornecedor (nome, cnpj, email, telefone, ativo) VALUES
+('BR Distribuidora', '11.111.111/1111-11', 'fornecedor@br.com', '81988888888', 0),
+('Areias Distribuidora', '11.111.111/1111-12', 'fornecedor@a.com', '81988888888', 1),
+('Senac Distribuidora', '11.111.111/1111-13', 'fornecedor@s.com', '81988888888', 0);
+
+INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES
+('Gasolina', 'Combustível', 5.50, 6.79, 100000, 'litros', '2025-12-31', 'BR Distribuidora'),
+('Etanol', 'Combustível', 3.90, 4.37, 100000, 'litros', '2025-12-31', 'BR Distribuidora');
+
+-- Compras simuladas
+INSERT INTO compra (data, valorTotal, fornecedor_id, distribuidora_id) VALUES
+('2023-01-01 00:00:00', 15000.00, 1, 1),
+('2023-01-05 01:00:00', 18000.00, 2, 2),
+('2023-01-10 02:00:00', 22000.00, 3, 3),
+('2023-01-15 03:00:00', 17000.00, 1, 2),
+('2023-01-20 04:00:00', 25000.00, 2, 1),
+('2025-07-20 05:00:00', 25000.00, 2, 1),
+('2025-07-20 06:00:00', 25000.00, 2, 1),
+('2025-07-25 07:00:00', 20000.00, 3, 3);
+
+
+-- Itens de compra
+INSERT INTO itemCompra (quantidade, precoUnitario, compra_id, produto_id) VALUES
+(3000.00, 5.50, 1, 1),  -- Gasolina
+(2000.00, 3.90, 1, 2),  -- Etanol
+(4000.00, 5.50, 2, 1),
+(3000.00, 3.90, 2, 2),
+(5000.00, 5.50, 3, 1),
+(4000.00, 3.90, 3, 2),
+(3500.00, 5.50, 4, 1),
+(2500.00, 3.90, 4, 2),
+(6000.00, 5.50, 5, 1),
+(5000.00, 3.90, 5, 2),
+(5500.00, 5.50, 6, 1),
+(4500.00, 3.90, 6, 2);
+
+
+-- Movimentações de estoque
+INSERT INTO movimentacaoEstoque (tipo, quantidade, origem, data, produto_id) VALUES
+('entrada', 3000.00, 'Compra ID 1', '2023-01-01 00:00:00', 1),
+('entrada', 2000.00, 'Compra ID 1', '2023-01-01 01:00:00', 2),
+('entrada', 4000.00, 'Compra ID 2', '2023-01-05 02:00:00', 1),
+('entrada', 3000.00, 'Compra ID 2', '2023-01-05 03:00:00', 2),
+('entrada', 5000.00, 'Compra ID 3', '2023-01-10 04:00:00', 1),
+('entrada', 4000.00, 'Compra ID 3', '2023-01-10 05:00:00', 2),
+('entrada', 3500.00, 'Compra ID 4', '2023-01-15 06:00:00', 1),
+('entrada', 2500.00, 'Compra ID 4', '2023-01-15 07:00:00', 2),
+('entrada', 6000.00, 'Compra ID 5', '2023-01-20 08:00:00', 1),
+('entrada', 5000.00, 'Compra ID 5', '2023-01-20 09:00:00', 2),
+('entrada', 5500.00, 'Compra ID 6', '2025-07-25 10:00:00', 1),
+('entrada', 5500.00, 'Compra ID 6', '2025-07-25 11:00:00', 2),
+('entrada', 5500.00, 'Compra ID 6', '2025-07-25 12:00:00', 1),
+('entrada', 5500.00, 'Compra ID 6', '2025-07-25 13:00:00', 1),
+('entrada', 4500.00, 'Compra ID 6', '2023-07-25 14:00:00', 2);
+
+-- Vendas
+INSERT INTO venda (data, valorTotal) VALUES 
+('2023-02-01 00:00:00', 22000.00),
+('2023-02-03 01:00:00', 24000.00),
+('2023-02-06 02:00:00', 20000.00),
+('2023-02-10 03:00:00', 27000.00),
+('2023-02-13 04:00:00', 19000.00),
+('2025-07-10 05:00:00', 27000.00),
+('2025-07-13 06:00:00', 19000.00),
+('2025-07-15 07:00:00', 31000.00);
+
+
+-- Itens de venda
+INSERT INTO itemVenda (quantidade, precoUnitario, venda_id, produto_id) VALUES
+(3000.00, 6.79, 1, 1),  -- Gasolina
+(2000.00, 4.37, 1, 2),  -- Etanol
+(3500.00, 6.79, 2, 1),
+(2000.00, 4.37, 2, 2),
+(2500.00, 6.79, 3, 1),
+(1500.00, 4.37, 3, 2),
+(4000.00, 6.79, 4, 1),
+(2500.00, 4.37, 4, 2),
+(2000.00, 6.79, 5, 1),
+(1500.00, 4.37, 5, 2),
+(4500.00, 6.79, 6, 1),
+(3000.00, 4.37, 6, 2);
+
