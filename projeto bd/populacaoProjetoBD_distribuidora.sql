@@ -1,3 +1,5 @@
+SET SQL_SAFE_UPDATES = 0;
+
 -- Distribuidora
 INSERT INTO distribuidora (nome, cnpj, email, telefone, ativo) VALUES
 ('Distribuidora Primeira', '00.000.000/0001-00', 'contato@distribuidora1.com', '81999999999', 1),
@@ -6,9 +8,19 @@ INSERT INTO distribuidora (nome, cnpj, email, telefone, ativo) VALUES
 
 -- Fornecedor
 INSERT INTO fornecedor (nome, cnpj, email, telefone, ativo) VALUES
-('BR Distribuidora', '11.111.111/1111-11', 'fornecedor@br.com', '81988888888', 0),
+('BR Distribuidora', '11.111.111/1111-11', 'fornecedor@br.com', '82988888888', 0),
 ('Areias Distribuidora', '11.111.111/1111-12', 'fornecedor@a.com', '81988888888', 1),
-('Senac Distribuidora', '11.111.111/1111-13', 'fornecedor@s.com', '81988888888', 0);
+('Senac Distribuidora', '11.111.111/1111-13', 'fornecedor@s.com', '82988888888', 0),
+('Deletada Distribuidora', '11.111.111/1111-14', 'fornecedor@d.com', '82988888888', 0);
+
+-- Atualização
+UPDATE fornecedor
+SET telefone = REPLACE(telefone, '829', '819')
+WHERE telefone LIKE '819%';
+
+-- Deletar
+DELETE FROM fornecedor
+WHERE id = 4;
 
 INSERT INTO produto (nome, categoria, precoCompra, precoVenda, quantidade, unidadeMedida, validade, marca) VALUES
 ('Gasolina', 'Combustível', 5.50, 6.79, 100000, 'litros', '2025-12-31', 'BR Distribuidora'),
