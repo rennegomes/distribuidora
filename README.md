@@ -23,5 +23,12 @@ Este projeto demonstra a aplicação prática dos conhecimentos adquiridos em ba
 ## SGBD Escolhido
 MySQL
 
+## Modelagem
+BRModelo
+DBDiagram
+
 ## Link para o Repositório ou Documentação
 [Projeto Distribuidora](https://github.com/rennegomes/distribuidora)
+
+## Link do Hackaton 26/07/2025
+[Link do Hackathon](https://github.com/rennegomes/hackathon_MBA)
